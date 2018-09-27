@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <br><br><br><br>
+
+    <div class="row">
+        <div class="col-sm-6">
+
+            <div class="container">
+                <div class="alert alert-primary" role="alert">
+                    Choose developer for the contract!!!
+                </div>
+                <form class="form-inline">
+
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action ">Full stack devloper</a>
+
+                        <a href="#" class="list-group-item list-group-item-action active">Frontend developer</a>
+                        <a href="#" class="list-group-item list-group-item-action">Backend developer</a>
+
+
+                        <br>
+                        <div class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Price in Eth</span>
+                            </div>
+                            <input type="text" id="price" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+
+                        <br>
+                        <!-- <div class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Pay to dev</span>
+                            </div>
+                            <input disabled type="text" id="paid" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                        </div>-->
+
+
+
+
+                        <br>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-success" id="btnDeploy">Deploy</button>
+                            <button type="button" class="btn btn" id="btnDeposit">Deposit</button>
+                            <button type="button" class="btn btn-info" id="btnPay">Pay</button>
+                            <button type="button" class="btn btn-danger" id="btnAppeal">Appeal</button>
+
+                        </div>
+
+                    </div>
+            </div>
+
+
+
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body" id="info">
+                       <!-- <div>Metamask address: <span id="meta_address">-</span></div> -->
+                    <div>Address of sc: <span id="address">-</span></div> 
+                    <div>Price: <span id="price1">-</span></div>
+                    <div>Deposited: <span id="deposit">No</span></div>
+                    <div>Paid: <span id="paid1">No</span></div>
+                    <div>Voting: <span id="voting">-</span></div>
+                    <div>Votes for dev: <span id="votes_dev">-</span></div>
+                    <div>Votes for client: <span id="votes_client">-</span></div>
+                    <div>Adress number 1: <span id="a1">-</span></div>
+                    <div>Adress number 2: <span id="a2">-</span></div>
+
+
+                </div>
+            </div>
+            <br>
+            <div class="btn-group">
+
+                <button type="button" class="btn btn-primary" id="btnVoteDev">Vote for developer</button>
+                <button type="button" class="btn btn-success" id="btnVoteClient">Vote for client</button>
+
+                
+            </div>
+
+            <br>
+            <br>
+           
+            
+            <div class="btn-group">
+                    
+                    <button type="button" class="btn btn-primary" id="btnVoteDev_1">Vote for developer</button>
+                    <button type="button" class="btn btn-success" id="btnVoteClient_1">Vote for client</button>
+    
+                    
+                </div>
+
+                <br>
+            <br>
+            
+            
+            <div class="btn-group">
+                    
+                    <button type="button" class="btn btn-primary" id="btnVoteDev_2">Vote for developer</button>
+                    <button type="button" class="btn btn-success" id="btnVoteClient_2">Vote for client</button>
+    
+                    
+                </div>
+    
+
+        </div>
+
+
+
+
+        </form>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
